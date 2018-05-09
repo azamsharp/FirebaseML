@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hf9-wa-eij">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tulip.png" translatesAutoresizingMaskIntoConstraints="NO" id="av7-A5-XS6">
+                                <rect key="frame" x="16" y="20" width="343" height="396"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTT-3n-sqB">
+                                <rect key="frame" x="16" y="522" width="343" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kj-f1-gXO">
+                                <rect key="frame" x="164" y="424" width="46" height="30"/>
+                                <state key="normal" title="Detect"/>
+                                <connections>
+                                    <action selector="detect" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVC-8N-jjX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="av7-A5-XS6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DYU-Vj-Qst"/>
+                            <constraint firstItem="KTT-3n-sqB" firstAttribute="leading" secondItem="av7-A5-XS6" secondAttribute="leading" id="Feu-am-AeQ"/>
+                            <constraint firstItem="av7-A5-XS6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LIp-dQ-0tZ"/>
+                            <constraint firstItem="9Kj-f1-gXO" firstAttribute="centerX" secondItem="KTT-3n-sqB" secondAttribute="centerX" id="RZU-a7-L1x"/>
+                            <constraint firstItem="av7-A5-XS6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c9F-Gr-FcM"/>
+                            <constraint firstItem="KTT-3n-sqB" firstAttribute="trailing" secondItem="av7-A5-XS6" secondAttribute="trailing" id="cX5-lC-c9s"/>
+                            <constraint firstItem="9Kj-f1-gXO" firstAttribute="top" secondItem="av7-A5-XS6" secondAttribute="bottom" constant="8" symbolic="YES" id="hsU-qp-iop"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="av7-A5-XS6" secondAttribute="bottom" constant="251" id="jt9-zi-eXa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KTT-3n-sqB" secondAttribute="bottom" constant="117" id="scA-BR-bae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="classificationLabel" destination="KTT-3n-sqB" id="32q-24-7ux"/>
+                        <outlet property="imageView" destination="av7-A5-XS6" id="s4c-9f-SZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="133"/>
+        </scene>
+        <!--Cloud Based View Controller-->
+        <scene sceneID="APE-vR-7Q6">
+            <objects>
+                <viewController id="hf9-wa-eij" customClass="CloudBasedViewController" customModule="FirebaseML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pCn-XO-KBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tulip.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-3N-5BZ">
+                                <rect key="frame" x="16" y="20" width="343" height="396"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unC-TW-Mfu">
+                                <rect key="frame" x="16" y="522" width="343" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGM-nu-5Np">
+                                <rect key="frame" x="164" y="424" width="46" height="30"/>
+                                <state key="normal" title="Detect"/>
+                                <connections>
+                                    <action selector="detect" destination="hf9-wa-eij" eventType="touchUpInside" id="3Yz-3e-Vab"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GGM-nu-5Np" firstAttribute="centerX" secondItem="unC-TW-Mfu" secondAttribute="centerX" id="19Y-Vb-TR2"/>
+                            <constraint firstItem="GGM-nu-5Np" firstAttribute="top" secondItem="eMH-3N-5BZ" secondAttribute="bottom" constant="8" symbolic="YES" id="NTf-X1-LeC"/>
+                            <constraint firstItem="eMH-3N-5BZ" firstAttribute="top" secondItem="sZo-8A-owi" secondAttribute="top" id="aqL-ff-U5I"/>
+                            <constraint firstItem="unC-TW-Mfu" firstAttribute="trailing" secondItem="eMH-3N-5BZ" secondAttribute="trailing" id="bse-lY-ix8"/>
+                            <constraint firstItem="eMH-3N-5BZ" firstAttribute="leading" secondItem="pCn-XO-KBa" secondAttribute="leadingMargin" id="ftE-qc-HV2"/>
+                            <constraint firstItem="sZo-8A-owi" firstAttribute="bottom" secondItem="unC-TW-Mfu" secondAttribute="bottom" constant="117" id="hTk-uI-wvH"/>
+                            <constraint firstItem="eMH-3N-5BZ" firstAttribute="trailing" secondItem="pCn-XO-KBa" secondAttribute="trailingMargin" id="obD-VY-M0x"/>
+                            <constraint firstItem="unC-TW-Mfu" firstAttribute="leading" secondItem="eMH-3N-5BZ" secondAttribute="leading" id="pfV-2n-vJd"/>
+                            <constraint firstItem="sZo-8A-owi" firstAttribute="bottom" secondItem="eMH-3N-5BZ" secondAttribute="bottom" constant="251" id="rhC-46-6tv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sZo-8A-owi"/>
+                    </view>
+                    <connections>
+                        <outlet property="classificationLabel" destination="unC-TW-Mfu" id="5BG-1m-yOz"/>
+                        <outlet property="imageView" destination="eMH-3N-5BZ" id="VJT-9V-g0O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwb-uJ-PuT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tulip.png" width="733" height="472"/>
+    </resources>
+</document>
