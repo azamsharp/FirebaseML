@@ -8,8 +8,10 @@ target 'FirebaseML' do
   # Pods for FirebaseML
 
   pod 'Firebase/Core' 
-  pod 'Firebase/MLVision' 
-
+  pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionLabelModel'
+  
+  # This is the pod responsible for barcode scanning
+  pod 'Firebase/MLVisionBarcodeModel'
 
 end

@@ -227,6 +227,10 @@ Copyright 2018 Google
 
 Copyright 2018 Google
 
+## FirebaseMLVisionBarcodeModel
+
+Copyright 2018 Google
+
 ## FirebaseMLVisionLabelModel
 
 Copyright 2018 Google

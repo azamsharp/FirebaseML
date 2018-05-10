@@ -13,6 +13,7 @@
 		8D7EFB2620A296A000761E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7EFB2420A296A000761E3F /* Main.storyboard */; };
 		8D7EFB2820A296A100761E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7EFB2720A296A100761E3F /* Assets.xcassets */; };
 		8D7EFB2B20A296A100761E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7EFB2920A296A100761E3F /* LaunchScreen.storyboard */; };
+		8D97584320A4A071000FB89D /* BarCodeDetectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97584220A4A071000FB89D /* BarCodeDetectorViewController.swift */; };
 		8D9CB90F20A298C1008E7C2D /* tulip.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CB90E20A298C1008E7C2D /* tulip.png */; };
 		8D9CB91120A29B37008E7C2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CB91020A29B37008E7C2D /* GoogleService-Info.plist */; };
 		8D9CB91620A29D8E008E7C2D /* bat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CB91220A29D8D008E7C2D /* bat.png */; };
@@ -33,6 +34,7 @@
 		8D7EFB2720A296A100761E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D7EFB2A20A296A100761E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7EFB2C20A296A100761E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D97584220A4A071000FB89D /* BarCodeDetectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeDetectorViewController.swift; sourceTree = "<group>"; };
 		8D9CB90E20A298C1008E7C2D /* tulip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tulip.png; sourceTree = "<group>"; };
 		8D9CB91020A29B37008E7C2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D9CB91220A29D8D008E7C2D /* bat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bat.png; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				8D7EFB2920A296A100761E3F /* LaunchScreen.storyboard */,
 				8D7EFB2C20A296A100761E3F /* Info.plist */,
 				8D9CB91A20A2A215008E7C2D /* CloudBasedViewController.swift */,
+				8D97584220A4A071000FB89D /* BarCodeDetectorViewController.swift */,
 			);
 			path = FirebaseML;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				8D7EFB2320A296A000761E3F /* ViewController.swift in Sources */,
 				8D9CB91B20A2A215008E7C2D /* CloudBasedViewController.swift in Sources */,
 				8D7EFB2120A296A000761E3F /* AppDelegate.swift in Sources */,
+				8D97584320A4A071000FB89D /* BarCodeDetectorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

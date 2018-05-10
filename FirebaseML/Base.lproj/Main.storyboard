@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hf9-wa-eij">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x1G-Kk-8g9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,6 +58,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-138" y="133"/>
+        </scene>
+        <!--Bar Code Detector View Controller-->
+        <scene sceneID="GK5-hw-1iu">
+            <objects>
+                <viewController id="x1G-Kk-8g9" customClass="BarCodeDetectorViewController" customModule="FirebaseML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jSE-6H-GjB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-V9-dwZ">
+                                <rect key="frame" x="0.0" y="112" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Qbx-tw-edL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bK6-bc-EUk">
+                                <rect key="frame" x="16" y="411" width="343" height="163"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wnb-V9-dwZ" firstAttribute="leading" secondItem="Rto-Mw-ebW" secondAttribute="leading" id="NPb-TS-EsC"/>
+                            <constraint firstItem="bK6-bc-EUk" firstAttribute="centerY" secondItem="jSE-6H-GjB" secondAttribute="centerY" constant="159" id="OD2-xn-xpO"/>
+                            <constraint firstItem="bK6-bc-EUk" firstAttribute="centerX" secondItem="Wnb-V9-dwZ" secondAttribute="centerX" id="QTT-87-V4B"/>
+                            <constraint firstItem="bK6-bc-EUk" firstAttribute="leading" secondItem="jSE-6H-GjB" secondAttribute="leadingMargin" id="eN9-NV-3yq"/>
+                            <constraint firstItem="Rto-Mw-ebW" firstAttribute="trailing" secondItem="Wnb-V9-dwZ" secondAttribute="trailing" id="qsD-gh-tEj"/>
+                            <constraint firstItem="Wnb-V9-dwZ" firstAttribute="top" secondItem="Rto-Mw-ebW" secondAttribute="top" constant="92" id="uG5-eJ-63z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rto-Mw-ebW"/>
+                    </view>
+                    <connections>
+                        <outlet property="barCodeRawValueLabel" destination="bK6-bc-EUk" id="KN5-L9-4vx"/>
+                        <outlet property="imageView" destination="Wnb-V9-dwZ" id="GFc-10-90h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zA5-Sx-xZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.199999999999999" y="965.6671664167917"/>
         </scene>
         <!--Cloud Based View Controller-->
         <scene sceneID="APE-vR-7Q6">

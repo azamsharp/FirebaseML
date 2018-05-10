@@ -7,6 +7,9 @@ PODS:
   - Firebase/MLVision (5.0.0):
     - Firebase/CoreOnly
     - FirebaseMLVision (= 0.9.0)
+  - Firebase/MLVisionBarcodeModel (5.0.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionBarcodeModel (= 0.9.0)
   - Firebase/MLVisionLabelModel (5.0.0):
     - Firebase/CoreOnly
     - FirebaseMLVisionLabelModel (= 0.9.0)
@@ -26,6 +29,8 @@ PODS:
     - GoogleAPIClientForREST/Core (~> 1.3)
     - GoogleAPIClientForREST/Vision (~> 1.3)
     - GoogleMobileVision/Detector (~> 1.3.0)
+  - FirebaseMLVisionBarcodeModel (0.9.0):
+    - GoogleMobileVision/BarcodeDetector (~> 1.3.0)
   - FirebaseMLVisionLabelModel (0.9.0):
     - GoogleMobileVision/LabelDetector (~> 1.3.0)
   - GoogleAPIClientForREST/Core (1.3.4):
@@ -33,6 +38,8 @@ PODS:
   - GoogleAPIClientForREST/Vision (1.3.4):
     - GoogleAPIClientForREST/Core
     - GTMSessionFetcher (>= 1.1.7)
+  - GoogleMobileVision/BarcodeDetector (1.3.0):
+    - GoogleMobileVision/Detector (~> 1.3)
   - GoogleMobileVision/Detector (1.3.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
@@ -60,6 +67,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/MLVision
+  - Firebase/MLVisionBarcodeModel
   - Firebase/MLVisionLabelModel
 
 SPEC CHECKSUMS:
@@ -69,6 +77,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
   FirebaseMLCommon: 73a2f53c8b3e6cd18e73dd1be095c3192af26a5e
   FirebaseMLVision: f9756d8376dd150fb17629eaa7bdc6baa8965677
+  FirebaseMLVisionBarcodeModel: dc1c6add14a3d69061eb6edacf90bb619f7aee52
   FirebaseMLVisionLabelModel: ab16cb2bc13630ee13d9b0c6104b94165e86933c
   GoogleAPIClientForREST: f7951c455df271bc6259b3ddb4073d0026475ccf
   GoogleMobileVision: 8c57c6b27b0964506cb7163049e67a38e279ea6f
@@ -77,6 +86,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
 
-PODFILE CHECKSUM: 27aff852429a213e489b4e21c74b8478717f2760
+PODFILE CHECKSUM: 50da80af8ad319bdce06b423fbadbe698c17d8c9
 
 COCOAPODS: 1.4.0
